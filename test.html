@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coordenadas</title>
+    <title>Mapa del Tesoro</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-image: url('mapa_tesoro.jpg');
-            background-size: cover;
+            background-size: 40%; /* Cambiado el tamaño del fondo */
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: center top; /* Colocar el fondo en la parte superior */
             color: white;
             text-align: center;
             height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
@@ -28,31 +29,6 @@
             box-sizing: border-box;
         }
         .content h1 {
-            font-size: 3em;
+            font-size: 2em; /* Tamaño de la fuente reducido */
             margin: 0;
-        }
-        .content p {
-            font-size: 1.5em;
-            margin: 10px 0;
-        }
-        @media (max-width: 768px) {
-            .content {
-                padding: 10px;
-            }
-            .content h1 {
-                font-size: 2em;
-            }
-            .content p {
-                font-size: 1.2em;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="content">
-        <h1>Coordenadas</h1>
-        <p>Latitud: 40.7128° N</p>
-        <p>Longitud: 74.0060° W</p>
-    </div>
-</body>
-</html>
+   
