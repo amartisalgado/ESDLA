@@ -22,4 +22,41 @@
             align-items: center;
         }
         .content {
-            backgroun
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 90%;
+            box-sizing: border-box;
+            margin-top: 20px; /* Margen superior para separar del borde superior */
+        }
+        .content p {
+            font-size: 1.2em; /* Tamaño de la fuente reducido */
+            margin: 10px 0;
+        }
+        .content img {
+            max-width: 100%; /* Ajuste del tamaño máximo */
+            border-radius: 10px;
+            margin-top: 10px; /* Margen superior para separar del texto */
+        }
+        @media (max-width: 768px) {
+            .content {
+                padding: 10px;
+            }
+            .content p {
+                font-size: 1em; /* Tamaño de la fuente reducido para dispositivos móviles */
+                margin: 5px 0; /* Reducción del margen entre los párrafos */
+            }
+            .content img {
+                max-width: 80%; /* Ajuste del tamaño máximo para dispositivos móviles */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>Latitud: 40.7128° N</p>
+        <p>Longitud: 74.0060° W</p>
+        <img src="anillo_llama.gif" alt="Anillo de la Llama GIF">
+    </div>
+</body>
+</html>
