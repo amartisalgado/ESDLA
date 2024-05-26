@@ -10,32 +10,41 @@
             margin: 0;
             padding: 0;
             background-image: url('mapa_esdla.jpg');
-            background-size: cover; /* Ajustado para cubrir completamente el fondo */
+            background-size: 100%; /* Cambiado el tamaño del fondo */
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: center top; /* Colocar el fondo en la parte superior */
             color: white;
             text-align: center;
             height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Alinear el contenido al centro vertical */
+            justify-content: flex-start; /* Alinear el contenido al inicio */
             align-items: center;
         }
         .content {
             background: rgba(0, 0, 0, 0.5);
-            padding: 20px;
+            padding: 10px;
             border-radius: 10px;
             max-width: 90%;
             box-sizing: border-box;
             margin-top: 20px; /* Margen superior para separar del borde superior */
         }
         .content p {
-            font-size: 1.2em; /* Tamaño de la fuente reducido */
-            margin: 10px 0;
+            font-size: 1em; /* Tamaño de la fuente reducido */
+            margin: 5px 0;
         }
-        @media (max-width: 768px) {
-            .content {
-                padding: 10px;
-            }
-            .content p {
-                font-siz
+        .content img {
+            max-width: 100%; /* Ajuste del tamaño máximo */
+            border-radius: 10px;
+            margin-top: 10px; /* Margen superior para separar del texto */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>Latitud: 40.7128° N</p>
+        <p>Longitud: 74.0060° W</p>
+        <img src="anillo_llama.gif" alt="Anillo de la Llama GIF">
+    </div>
+</body>
+</html>
