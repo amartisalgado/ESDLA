@@ -22,6 +22,7 @@
             align-items: center;
         }
         .content {
+            position: relative;
             background: rgba(0, 0, 0, 0.5);
             padding: 20px;
             border-radius: 10px;
@@ -34,9 +35,11 @@
             margin: 10px 0;
         }
         .content img {
-            max-width: 100%; /* Ajuste del tamaño máximo */
+            max-width: 40%; /* Ajuste del tamaño máximo */
             border-radius: 10px;
-            margin-top: 10px; /* Margen superior para separar del texto */
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
         }
         @media (max-width: 768px) {
             .content {
@@ -47,7 +50,7 @@
                 margin: 5px 0; /* Reducción del margen entre los párrafos */
             }
             .content img {
-                max-width: 80%; /* Ajuste del tamaño máximo para dispositivos móviles */
+                max-width: 60%; /* Ajuste del tamaño máximo para dispositivos móviles */
             }
         }
     </style>
