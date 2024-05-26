@@ -10,19 +10,18 @@
             margin: 0;
             padding: 0;
             background-image: url('mapa_esdla.jpg');
-            background-size: 100%; /* Cambiado el tamaño del fondo */
+            background-size: cover; /* Ajustado para cubrir completamente el fondo */
             background-repeat: no-repeat;
-            background-position: center top; /* Colocar el fondo en la parte superior */
+            background-position: center;
             color: white;
             text-align: center;
             height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; /* Alinear el contenido al inicio */
+            justify-content: flex-start;
             align-items: center;
         }
         .content {
-            position: relative;
             background: rgba(0, 0, 0, 0.5);
             padding: 20px;
             border-radius: 10px;
@@ -34,52 +33,6 @@
             font-size: 1.2em; /* Tamaño de la fuente reducido */
             margin: 10px 0;
         }
-        .map-container {
-            position: relative;
-            width: 100%;
-            height: 300px; /* Ajuste de la altura del contenedor del mapa */
-            background-size: cover;
-            background-position: center;
-            border-radius: 10px;
-            overflow: hidden;
-            margin-bottom: 20px; /* Margen inferior para separar del texto */
-        }
-        .map-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
         .map-overlay {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
             max-width: 80px; /* Ajuste del tamaño del GIF */
-            border-radius: 10px;
-        }
-        @media (max-width: 768px) {
-            .content {
-                padding: 10px;
-            }
-            .content p {
-                font-size: 1em; /* Tamaño de la fuente reducido para dispositivos móviles */
-                margin: 5px 0; /* Reducción del margen entre los párrafos */
-            }
-            .map-overlay {
-                max-width: 60px; /* Ajuste del tamaño máximo del GIF para dispositivos móviles */
-                bottom: 5px;
-                left: 5px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="content">
-        <p>Latitud: 40.7128° N</p>
-        <p>Longitud: 74.0060° W</p>
-        <div class="map-container">
-            <img src="mapa_esdla.jpg" alt="Mapa del Tesoro">
-            <img class="map-overlay" src="anillo_llama.gif" alt="Anillo de la Llama GIF">
-        </div>
-    </div>
-</body>
-</html>
+            bo
